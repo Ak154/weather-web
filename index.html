@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather WebApp</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="addMap()">
+    <div id="container">
+        <nav id="nav"></nav>
+    </div>
+    <div id="container-nav">
+        <section id="input-data">
+            <input type="search" value="Noida" id="input" placeholder="Enter location" />
+            <button id="searchBtn">search</button>
+        </section>
+        <section id="weather-value" >
+            <img src="./navigation.png" alt="image" width="30px" height="30px"/>
+            <button>Different Weather?</button>
+            <button id="matric">Matric: °C, m/s</button>
+            <button id="imperial">Imperial: °F, mph</button>
+        </section>
+    </div>
+    <div id="container-data">
+        <section id="weather-forecast">
+        </section>
+        <section id="mapContainer">
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
